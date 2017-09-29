@@ -1,7 +1,7 @@
 import sys
 
 
-def isInt(x):
+def isint(x):
     try:
         a = int(x)
     except ValueError:
@@ -10,7 +10,7 @@ def isInt(x):
 
 
 number = input('수를 입력하세요: ')
-if isInt(number):
+if isint(number):
     if int(number) % 3 == 0:
         print('3의 배수입니다.')
     else:
