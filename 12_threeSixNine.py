@@ -7,10 +7,8 @@ def clap(num):
 for i in range(1, 99):
     clap_sum = ''
     div = divmod(i, 10)
-    if clap(div[0]):
-        clap_sum += '짝'
-    if clap(div[1]):
-        clap_sum += '짝'
+    for val in div:
+        if clap(val):
+            clap_sum += '짝'
     if clap_sum != '':
         print(str(i) + ' ' + clap_sum)
-
