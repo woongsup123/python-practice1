@@ -1,6 +1,6 @@
 num = int(input('숫자를 입력하세요: '))
-sum = 0
+sumOfNums = 0
 for i in range(num, 0, -2):
-    sum += i
+    sumOfNums += i
 
-print(sum)
+print(sumOfNums)
