@@ -1,6 +1,10 @@
-nums = []
-rep = input('Enter number of inputs: ')
-for i in range(int(rep)):
-    nums.append(int(input()))
+sum_of_nums = 0
 
-print(sum(nums))
+def add_to_sum(num):
+    global sum_of_nums
+    sum_of_nums += num
+
+while True:
+    num = int(input())
+    add_to_sum(num)
+    print(sum_of_nums)
