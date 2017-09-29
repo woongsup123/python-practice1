@@ -13,3 +13,15 @@ s = """
 
 print(re.sub('<.*?>', '', s))
 
+replaced_s = ''
+flag = False
+for c in s:
+    if c == '<':
+        flag = True
+    elif c == '>':
+        flag = False
+        continue
+    if not flag:
+        replaced_s += c
+
+print(replaced_s)
